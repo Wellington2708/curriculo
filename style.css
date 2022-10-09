@@ -1,0 +1,127 @@
+:root {
+    --cor-principal: #E6D5B8;
+    --cor-link: #9a4e72;
+    --hover-link: rgb(150, 198, 27);
+}
+
+body { 
+    background: #1B1A17;
+    color: var(--cor-principal);
+    font-weight: bold;
+    
+ }
+
+ img, .dados__contato {
+    display: inline-block;
+
+}   
+
+img {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #080102;
+    margin: 25px 5px 10px 10px; 
+}
+
+.dados__contato {
+    margin: 0 0 15px 0;
+    width: 88%;
+    color: #d9bf12;
+    font-weight: bold;
+}
+
+.nome {
+    font-size: 25px;
+    color: rgb(242, 235, 235);
+    
+}
+
+.email:before {
+    content: "Ⓛ " ;
+    margin-left: 15px;
+}
+
+.email {
+   color: var(--cor-link);
+
+}
+
+.linkedin:before {
+    content: "Ⓛ ";
+}
+
+.linkedin {
+    color: var(--cor-link) 
+}
+
+.linkedin:hover , .email:hover {
+    color: var(--hover-link);
+}
+
+
+ main {
+    margin: 20px;
+    color: var(--branco-principal)
+}
+
+h1 {
+    color: 
+    font-weight: bold;
+} 
+
+h2 {
+    color: #F0A500;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+p {
+
+}
+
+.conteudo-esquerdo {
+    width: 49.5%; height: 690px; float: left ; ;
+
+}
+
+.conteudo-direito {
+    width: 50%; height: 690px; float: right; 
+
+}
+
+
+
+.experiencia-profissional {
+    font-weight: bold;
+    font-size: 17px;
+    font-style: arial
+
+}
+
+.curso__alura {
+    color: var(--cor-link);
+}
+
+.site__fasam {
+    color: var(--cor-link);
+}
+
+.itens:before {
+    content: "•";
+}
+
+strong {
+    font-weight: bold;
+}
+
+.formacao {
+    font-weight: bold;
+}
+
+table ,th, tr, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 3px;
+    text-align: center;
+    
+}
