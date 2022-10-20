@@ -75,13 +75,13 @@ h1 {
 } 
 
 h2 {
-    color: var(--cor-subtitulos);
+    color:rgb(82, 239, 90);
     font-weight: bold;
     margin: 10px 0 5px 0;
 }
 
 p {
-
+     color: rgb(193, 163, 116);
 }
 
 .conteudo-esquerdo {
@@ -94,7 +94,9 @@ p {
 
 }
 
-
+ul {
+    color: rgb(7, 25, 73);
+}
 
 .experiencia-profissional {
     font-weight: bold;
@@ -129,4 +131,8 @@ table ,th, tr, td {
     padding: 3px;
     text-align: center;
     
+}
+
+.container__flex {
+    display: flex;
 }
