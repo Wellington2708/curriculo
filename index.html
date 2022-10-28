@@ -12,22 +12,26 @@
 
     <body>
         <header>
-            <img src="img/foto-perfil.png" alt="Foto do rosto Wellington">
-            <ul class="dados__contato">
-                <li class="nome">Nome: Wellington Luis Pereira Junior</li>
-                <li class="lista-itens">Data de nascimento: 27/08/1988</li>
-                <li class="lista-itens">Telefone: (+351) 915519083 </li>
-                <li class="lista-itens">Morada: Avenida Portas do Minho, 4760-706, Ribeirão, Portugal</li>
-                <li class="lista-itens">E-mail:<a class="email" href="http://wellingtonjunior1027@hotmail.com">wellingtonjunior1027@gmail.com</a></li>
-                <li class="lista-itens">Linkedin:<a class="linkedin" href="https://www.linkedin.com/in/wellington-junior-41513874/">https://www.linkedin.com/in/wellington-junior-41513874/</a></li>     
-            </ul>
+            <div>
+                <img src="img/foto-perfil.png" alt="Foto do rosto Wellington" class="imagem__perfil">
+            </div>
+            <div>
+                <ol  class="dados__contato">
+                    <li class="lista__nome">Nome: Wellington Luis Pereira Junior</li>
+                    <li>Data de nascimento: 27/08/1988</li>
+                    <li>Telefone: (+351) 915519083 </li>
+                    <li>Morada: Avenida Portas do Minho, 4760-706, Ribeirão, Portugal</li>
+                    <li>E-mail:<a class="email" href="http://wellingtonjunior1027@hotmail.com">wellingtonjunior1027@gmail.com</a></li>
+                    <li>Linkedin:<a class="linkedin" href="https://www.linkedin.com/in/wellington-junior-41513874/">https://www.linkedin.com/in/wellington-junior-41513874/</a></li>     
+                </ol>
+            </div>
         </header>       
-        <main class="container__flex">
-            <section class="conteudo-esquerdo">
-                <h1 class="experiencia-profissional">EXPERIÊNCIA PROFISSIONAL</h1>
+        <main>
+            <div class="experiencia">
+                <h1 class="experiencia__profissional">EXPERIÊNCIA PROFISSIONAL</h1>
                         <!--Primeira Experiência-->
-                <h2>Supervisor de Expedição - Natuflores - <strong>Goiânia - BR</strong></h2>
-                <p>Data: 16-02-2021 à 01-03-2022 </p>
+                <h2>Supervisor de Expedição - Natuflores - Goiânia - BR</h2>
+                <p class="periodo">Data: 16-02-2021 à 01-03-2022 </p>
                 <ul>
                     <li class="itens">Responsável pela separação e envio dos pedidos aos clientes.</li>
                     <li class="itens">Controle de logística.</li>
@@ -35,30 +39,29 @@
                     <li class="itens">Organização de estoque.</li>
                     
                 </ul>
-                _____________________________________________________________________
                         
                         
                 <!--Segunda Experência--> 
-                <h2>Frentista/Abastecedor - GALP TROFA - <strong>Portugal</strong></h2>
-                <p>Data: 01-01-2019 à 15-06-2019 </p>
+                <h2>Frentista/Abastecedor - GALP TROFA - Portugal</h2>
+                <p class="periodo">Data: 01-01-2019 à 15-06-2019 </p>
                 <ul>
                     <li class="itens">Responsável por abastecer os veículos dos clientes.</li>
                     <li class="itens">Lavagem e secagem.</li>
                     <li class="itens">Abastecimento de estoque.</li>
                 </ul>
-                _____________________________________________________________________
+                
                 <!--Terceira Experência--> 
-                <h2>Assistente de Produção</h2>
-                <p>Data: 01-10-2012 à 01-07-2013 - <strong>Goiânia - BR</strong> </p>
+                <h2>Assistente de Produção - DECOR - Goiânia - BR</h2>
+                <p class="periodo">Data: 01-10-2012 à 01-07-2013 - Goiânia - BR </p>
                 <ul>
                     <li class="itens">Produção de peças e materiais de construção</li>
                     <li class="itens">Controle de estoque, envio de pedidos ao cliente.</li>     
                 </ul>
-                _____________________________________________________________________
+                
 
                 <!--Quarta Experência--> 
-                <h2>ASSISTENTE ADMINISTRATIVO – CENTRO DE DIAGNOSTICO POR IMAGEM</h2>
-                <p>Data: 01-10-2013 à 09-07-2016 - <strong>Goiânia - BR</strong> </p>
+                <h2>Assistente Administrativo– Nuclear CDI - Goiânia</h2>
+                <p class="periodo">Data: 01-10-2013 à 09-07-2016 - Goiânia - BR </p>
                 <ul>
                     <li class="itens">Responsável por cobranças dos serviços prestados.</li>
                     <li class="itens">Negociação de renovação de contrato.</li>
@@ -67,10 +70,10 @@
                     <li class="itens">Digitador.</li>
                     <li class="itens">Controle de contas a pagar</li>    
                 </ul>
-                _____________________________________________________________________
+                
                <!--Quinta Experência--> 
-                    <h2>ASSISTENTE ADMINISTRATIVO – CENTRO BRASILEIRO DE MEDICINA NUCLEAR</h2>
-                    <p>Data: 08-03-2018 à 07-07-2019 - <strong>Goiânia - BR</strong> </p>
+                    <h2>Assistente Administrativo – CEBRAMEN - Goiânia - BR</h2>
+                    <p class="periodo">Data: 08-03-2018 à 07-07-2019 - Goiânia - BR </p>
                 <ul>
                     <li class="itens">Responsável por cobranças dos serviços prestados.</li>
                     <li class="itens">Controle de Nota Fiscal.</li>
@@ -79,12 +82,12 @@
                     <li class="itens">Arquivista</li>
                     <li class="itens">Compras</li>            
                 </ul>
-            </section>
-            <section class="conteudo-direito">
+            </div>
+            <div>
                 <h1 class="formacao">EDUCAÇÃO E FORMAÇÃO</h1>
-                <h2>Desenvolvedor Front-end -ALURA CURSOS</h2>
-                <p>Data: 01/05/2022–Atualmente</p>
-                <a href="https://www.alura.com.br" class="curso__alura">Site dos Cursos Alura</a>
+                <h2>Desenvolvedor Front-end - Alura Cursos - </h2><a href="https://www.alura.com.br" class="curso__alura">Site Alura</a>
+                <p class="periodo">Data: 01/05/2022–Atualmente</p>
+                
                 
                 Tese: HTML, CSS, Javascript
                 <ul>
@@ -95,12 +98,12 @@
                     <li class="itens">Lógica de Programação</li>
                     <li class="itens">GIT</li>
                   
-                _____________________________________________________________________    
+                    
                 </ul>
                 
-                <h2>Gestão de Pessoas- <strong>FASAM - FACULDADE SUL AMERICANA</strong></h2>
-                <p>Data: 01/01/2011 – 31/12/2011 – APARECIDA DE GOIANIA</p>
-                <a href="https://fasam.edu.br/" class="site__fasam">Site da FASAM</a>
+                <h2>Gestão de Pessoas- FASAM - FACULDADE SUL AMERICANA</h2>
+                <p class="periodo">Data: 01/01/2011 – 31/12/2011 – APARECIDA DE GOIANIA</p><a href="https://fasam.edu.br/" class="site__fasam">Site FASAM</a>
+                
                 <ul>
                     <li class="itens">Psicologia do Trabalho.</li>
                     <li class="itens">Comunicação Empresarial.</li>
@@ -114,7 +117,7 @@
                     <li class="itens">Treinamento e Desenvolvimento de RH</li>
                     
                 </ul>
-                _____________________________________________________________________
+                
 
                 <h2>NÍVEL DE LINGUAGEM</h2>
                 <h2 class="lingua__materna">Língua Materna: Português</h2>
@@ -145,9 +148,9 @@
 
                 </table>
                
-                <p>Níveis: A1 e A2: Utilizador de base; B1 e B2: Utilizador independente; C1 e C2: Utilizador avançado</p>   
-                _____________________________________________________________________   
-            </section>
+                <p class="periodo">Níveis: A1 e A2: Utilizador de base; B1 e B2: Utilizador independente; C1 e C2: Utilizador avançado</p>   
+                   
+            </div>
         </main>
     </body>
 </html>

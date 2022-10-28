@@ -1,28 +1,25 @@
 :root {
     --cor-principal: #FFFFFF;
     --cor-link: #1b16b9;
-    --hover-link: rgb(243, 244, 240);
-    --dados-contato: #b0b815;
-    --cor-subtitulos: #d2b77b;
+    --hover-link: rgb(106, 41, 98);
+    --dados-contato: #b81592;
+    --cor-subtitulos: #2fa394;
+    --cor-preto: black;
+    --cor-cargo: #b81592;
 }
 
 body { 
-    background: linear-gradient(90deg, rgba(10, 5, 5, 0.79), rgba(68, 68, 75, 0.79));
-    font-weight: bold;
+    background: linear-gradient(90deg, #ee4e3ca2, #1616d65a);
     
- }
+ } 
 
- img, .dados__contato  {
-    display: inline-block;
-
-}   
-
-header {
+ header {
     display: flex;
     align-items: center;
-}
+ }
 
-img {
+
+.imagem__perfil {
     width: 100px;
     border-radius: 50%;
     border: 2px solid #080102;
@@ -36,9 +33,9 @@ img {
     font-weight: bold;
 }
 
-.nome {
+.lista__nome {
     font-size: 25px;
-    color: var(--cor-principal)
+    color: var(--cor-principal);
 }
 
 .email:before {
@@ -65,64 +62,41 @@ img {
 
 
  main {
+    display: flex;
     margin: 20px;
     color: var(--branco-principal)
+
 }
 
-h1 {
-    color: var(--cor-principal);
+
+.experiencia__profissional , .formacao {
+    color: var(--cor-preto);
     font-weight: bold;
+    font-size: 17px;
+    font-style: arial
 } 
 
 h2 {
-    color:rgb(82, 239, 90);
+    color: var(--cor-cargo);
     font-weight: bold;
     margin: 10px 0 5px 0;
 }
 
-p {
-     color: rgb(193, 163, 116);
+.periodo {
+    color: var(--cor-principal)
 }
 
-.conteudo-esquerdo {
-    width: 49.5%; height: 690px; float: left ; ;
-
+.itens {
+   
 }
 
-.conteudo-direito {
-    width: 50%; height: 690px; float: right; 
-
-}
-
-ul {
-    color: rgb(7, 25, 73);
-}
-
-.experiencia-profissional {
-    font-weight: bold;
-    font-size: 17px;
-    font-style: arial
-
-}
-
-.curso__alura {
+.curso__alura , .site__fasam {
     color: var(--cor-link);
+    text-decoration: none;
 }
 
-.site__fasam {
-    color: var(--cor-link);
-}
-
-.itens:before {
-    content: "•";
-}
-
-strong {
-    font-weight: bold;
-}
-
-.formacao {
-    font-weight: bold;
+.experiencia {
+    padding-right: 20%;
 }
 
 table ,th, tr, td {
@@ -133,6 +107,6 @@ table ,th, tr, td {
     
 }
 
-.container__flex {
-    display: flex;
+ul {
+    list-style: inside;
 }
