@@ -83,11 +83,13 @@ h2 {
 }
 
 .periodo {
-    color: var(--cor-principal)
+    color: var(--cor-principal);
+    padding: 0.3em;
 }
 
+
 .itens {
-   
+    list-style: inside;
 }
 
 .curso__alura , .site__fasam {
@@ -108,5 +110,6 @@ table ,th, tr, td {
 }
 
 ul {
-    list-style: inside;
+    border-bottom: 0.5em solid;
+    border-color: #870c46;
 }
