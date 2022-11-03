@@ -22,7 +22,7 @@ body {
 .imagem__perfil {
     width: 100px;
     border-radius: 50%;
-    border: 2px solid #080102;
+    border: 2px solid #d01632;
     margin: 0 10px; 
     outline: calc(100px / 2) solid #0009;
     outline-offset: calc(100px / -2);
@@ -33,7 +33,7 @@ body {
 
 .imagem__perfil:hover {
     outline: 8px solid #5d52a2;
-    outline-offset: 14px;
+    outline-offset: 5px;
   }
 
 .dados__contato {
@@ -53,7 +53,7 @@ body {
     margin-left: 15px;
 }
 
-.email {
+.email , .linkedin , .curso__alura , .site__fasam {
    color: var(--cor-link);
 
 }
@@ -62,11 +62,7 @@ body {
     content: "Ⓛ ";
 }
 
-.linkedin {
-    color: var(--cor-link) 
-}
-
-.linkedin:hover , .email:hover {
+.linkedin:hover , .email:hover , .curso__alura:hover , .site__fasam:hover {
     color: var(--hover-link);
 }
 
@@ -100,11 +96,6 @@ h2 {
 
 .itens {
     list-style: inside;
-}
-
-.curso__alura , .site__fasam {
-    color: var(--cor-link);
-    text-decoration: none;
 }
 
 .experiencia {
