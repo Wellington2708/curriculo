@@ -9,7 +9,7 @@
 }
 
 body { 
-    background: linear-gradient(90deg, #ee4e3ca2, #1616d65a);
+    background: linear-gradient(180deg, #e72f0bc8, #1040d05a);
     
  } 
 
@@ -38,7 +38,7 @@ body {
 
 .dados__contato {
     margin: 29px 0 20px 5px;
-    width: 100%;
+    width: 90%;
     color: var(--dados-contato);
     font-weight: bold;
 }
@@ -58,6 +58,10 @@ body {
 
 }
 
+.linkedin {
+    width: 80%;
+}
+
 .linkedin:before {
     content: "Ⓛ ";
 }
@@ -67,9 +71,9 @@ body {
 }
 
 
- main {
+  .conteudo{
     display: flex;
-    margin: 20px;
+    margin: 0 0 0 10px;
     color: var(--branco-principal)
 
 }
@@ -98,19 +102,12 @@ h2 {
     list-style: inside;
 }
 
-.experiencia {
-    padding-right: 20%;
-}
 
 table ,th, tr, td {
     border: 1px solid;
     border-collapse: collapse;
-    padding: 3px;
+    padding: 0.1em;
     text-align: center;
     
 }
 
-ul {
-    border-bottom: 0.5em solid;
-    border-color: #870c46;
-}
