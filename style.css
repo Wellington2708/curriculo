@@ -9,7 +9,7 @@
 }
 
 body { 
-    background: linear-gradient(180deg, #e72f0bc8, #1040d05a);
+    background: linear-gradient(180deg, #1e5270c8, #36042d5a , #1e5270c8);
     
  } 
 
@@ -111,3 +111,5 @@ table ,th, tr, td {
     
 }
 
+li {
+}
