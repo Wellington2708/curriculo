@@ -8,5 +8,4 @@ A tendência é que com o passar do tempo, o currículo se torne mais dinâmico 
 interações com quem o acessa. 
 A ideia é que ao visualizá-lo, o usuário consiga adquitir informações
 atráves de sua busca e interação com o contéudo descrito. 
-
-<img width="1418" alt="Captura de Tela 2022-11-03 às 21 21 10" src="https://user-images.githubusercontent.com/110790543/199837237-bdb32e5d-f4b2-4509-8001-46e3f0e58654.png">
+<img width="835" alt="Captura de Tela 2022-11-12 às 19 07 01" src="https://user-images.githubusercontent.com/110790543/201490679-f62843a9-6d1f-4a7d-8775-0594b3e51b3c.png">
