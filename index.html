@@ -4,8 +4,14 @@
         <meta charset="UTF-8">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Teko&display=swap" rel="stylesheet">
+        
         <title>Curriculo Wellington</title>
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
 
 
@@ -18,18 +24,19 @@
             </div>
             <div>
                 <ol  class="dados__contato">
-                    <li class="lista__nome">Nome: Wellington Luis Pereira Junior</li>
+                    <li class="nome">Nome: Wellington Luis Pereira Junior</li>
                     <li>Data de nascimento: 27/08/1988</li>
                     <li>Telefone: ********* </li>
                     <li>Morada: Vila Nova de Famailicão, Portugal</li>
-                    <li>E-mail:<a class="email" href="*********">*********</a></li>
-                    <li>Linkedin:<a class="linkedin" href="https://www.linkedin.com/in/wellington-junior-41513874/">Home Page Wellington Junior</a></li>     
+                    <li class="cor__email"><i class="fa-solid fa-envelope"></i><a class="email" href="*********">Enviar Email</a></li>
+                    <li class="cor__linkedin"><i class="fa-brands fa-linkedin"></i><a class="linkedin" href="https://www.linkedin.com/in/wellington-junior-41513874/">Home Page</a></li>  
+                    <li class="cor__gitHub"><i class="fa-brands fa-github"></i><a class="gitHub" href="https://github.com/Wellington2708">Home Page</a></li>  
                 </ol>
             </div>
         </header>       
         <section class="conteudo">
-            <div class="experiencia">
-                <h1 class="experiencia__profissional">EXPERIÊNCIA PROFISSIONAL</h1>
+            <div class="experiencia__profissional">
+                <h1 class="experiencia">EXPERIÊNCIA PROFISSIONAL</h1>
                         <!--Primeira Experiência-->
                 <h2>Supervisor de Expedição - Natuflores - Goiânia - BR</h2>
                 <p class="periodo">Data: 16-02-2021 à 01-03-2022 </p>
@@ -40,7 +47,8 @@
                     <li class="itens">Organização de estoque.</li>
                     
                 </ul>
-                <hr/>        
+                <hr>
+                       
                         
                 <!--Segunda Experência--> 
                 <h2>Frentista/Abastecedor - GALP TROFA - Portugal</h2>
@@ -50,7 +58,7 @@
                     <li class="itens">Lavagem e secagem.</li>
                     <li class="itens">Abastecimento de estoque.</li>
                 </ul>
-                <hr/>
+                <hr>
                 
                 <!--Terceira Experência--> 
                 <h2>Assistente de Produção - DECOR - Goiânia - BR</h2>
@@ -59,7 +67,7 @@
                     <li class="itens">Produção de peças e materiais de construção</li>
                     <li class="itens">Controle de estoque, envio de pedidos ao cliente.</li>     
                 </ul>
-                <hr/>
+                <hr>
 
                 <!--Quarta Experência--> 
                 <h2>Assistente Administrativo– Nuclear CDI - Goiânia</h2>
@@ -72,7 +80,7 @@
                     <li class="itens">Digitador.</li>
                     <li class="itens">Controle de contas a pagar</li>    
                 </ul>
-                <hr/>
+                <hr>
             
                <!--Quinta Experência--> 
                     <h2>Assistente Administrativo – CEBRAMEN - Goiânia - BR</h2>
@@ -85,8 +93,9 @@
                     <li class="itens">Arquivista</li>
                     <li class="itens">Compras</li>            
                 </ul>
-                <hr/>
-            
+                
+            </div>
+            <div class="estudos">    
             
                 <h1 class="formacao">EDUCAÇÃO E FORMAÇÃO</h1>
                 <h2>Desenvolvedor Front-end - Alura Cursos - </h2><a href="https://cursos.alura.com.br/user/WELLINGTONJUNIOR1027/fullCertificate/c896cb400ceeed3f9eb92524a7755db3" class="curso__alura">Certicados Alura</a>
@@ -102,7 +111,7 @@
                   
                     
                 </ul>
-                <hr/>
+                <hr>
 
                 <h2>Gestão de Pessoas- FASAM - FACULDADE SUL AMERICANA</h2>
                 <p class="periodo">Data: 01/01/2011 – 31/12/2011 – APARECIDA DE GOIANIA</p><a href="https://fasam.edu.br/" class="site__fasam">Site FASAM</a>
@@ -120,12 +129,12 @@
                     <li class="itens">Treinamento e Desenvolvimento de RH</li>
                     
                 </ul>
-                <hr/>
+                <hr>
 
                 <h2>NÍVEL DE LINGUAGEM</h2>
                 <h2 class="lingua__materna">Língua Materna: Português</h2>
                 <table>
-                    <tr>
+                    <tr class="cabecalho__tabela">
                         <th>LINGUA</th>
                         <th>COMPREENDER</th>
                         <th>FALAR</th>

@@ -1,17 +1,22 @@
 :root {
     --cor-principal: #FFFFFF;
     --cor-link: #1b16b9;
-    --hover-link: rgb(106, 41, 98);
-    --dados-contato: #b81592;
-    --cor-subtitulos: #2fa394;
+    --hover-link: rgb(8, 215, 180);
+    --dados-contato: #920c4a;
     --cor-preto: black;
-    --cor-cargo: #b81592;
+    --cor-cargo: #920c4a;
 }
 
-body { 
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
     background: linear-gradient(180deg, #1e5270c8, #36042d5a , #1e5270c8);
-    
- } 
+  
+}
+
 
  header {
     display: flex;
@@ -36,6 +41,11 @@ body {
     outline-offset: 5px;
   }
 
+  .nome {
+    font-size: 25px;
+    color: var(--cor-principal);
+}
+
 .dados__contato {
     margin: 29px 0 20px 5px;
     width: 90%;
@@ -43,52 +53,56 @@ body {
     font-weight: bold;
 }
 
-.lista__nome {
-    font-size: 25px;
-    color: var(--cor-principal);
-}
 
-.email:before {
-    content: "Ⓛ " ;
-    margin-left: 15px;
-}
-
-.email , .linkedin , .curso__alura , .site__fasam {
-   color: var(--cor-link);
+.cor__linkedin , .cor__email , .cor__gitHub , 
+.curso__alura , .site__fasam{
+    color: var(--cor-link);
 
 }
 
-.linkedin {
-    width: 80%;
+.linkedin , .email , .gitHub {
+    margin-left: 3px;
+    text-decoration: none;
+
 }
 
-.linkedin:before {
-    content: "Ⓛ ";
+.site__fasam , .curso__alura {
+    text-decoration: none;
 }
 
-.linkedin:hover , .email:hover , .curso__alura:hover , .site__fasam:hover {
+
+.linkedin:hover , .email:hover , .curso__alura:hover ,
+.site__fasam:hover , .gitHub:hover {
     color: var(--hover-link);
 }
 
 
-  .conteudo{
+.conteudo {
     display: flex;
-    margin: 0 0 0 10px;
-    color: var(--branco-principal)
+}
+
+
+.experiencia__profissional {
+    margin-right: 10em;
+    margin-left: 10px ;
+    width: 50%;
 
 }
 
 
-.experiencia__profissional , .formacao {
+.experiencia , .formacao {
     color: var(--cor-preto);
-    font-weight: bold;
-    font-size: 17px;
-    font-style: arial
+    font-size: 24px;
 } 
+
+.estudos {
+    width: 50%;
+    height: 100%;
+    
+}
 
 h2 {
     color: var(--cor-cargo);
-    font-weight: bold;
     margin: 10px 0 5px 0;
 }
 
@@ -100,6 +114,7 @@ h2 {
 
 .itens {
     list-style: inside;
+   
 }
 
 
@@ -109,5 +124,9 @@ table ,th, tr, td {
     padding: 0.1em;
     text-align: center;
     
+}
+
+.cabecalho__tabela {
+    color:  #750a25f1;
 }
 
