@@ -1,7 +1,7 @@
 :root {
     --cor-principal: #FFFFFF;
     --cor-link: #1b16b9;
-    --hover-link: rgb(8, 215, 180);
+    --hover-link: rgb(146, 215, 8);
     --dados-contato: #920c4a;
     --cor-preto: black;
     --cor-cargo: #920c4a;
@@ -46,16 +46,24 @@ body {
     color: var(--cor-principal);
 }
 
-.dados__contato {
+#dados__contato {
     margin: 29px 0 20px 5px;
     width: 90%;
     color: var(--dados-contato);
     font-weight: bold;
 }
 
+#botao {
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: var(--cor-principal);
+    background-color: var(--cor-cargo);
+    text-transform: uppercase;
+}
 
-.cor__linkedin , .cor__email , .cor__gitHub , 
-.curso__alura , .site__fasam{
+
+.cor__link , a {
     color: var(--cor-link);
 
 }
