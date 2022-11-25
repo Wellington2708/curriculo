@@ -1,4 +1,5 @@
 :root {
+    --background-body: linear-gradient(180deg, #1e5270c8, #36042d5a , #1e5270c8);
     --cor-principal: #FFFFFF;
     --cor-link: #1b16b9;
     --hover-link: rgb(190, 24, 60);
@@ -13,32 +14,36 @@ body {
     font-family: 'Teko', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    background: linear-gradient(180deg, #1e5270c8, #36042d5a , #1e5270c8);
-  
+    background: var(--background-body)
+
 }
 
 
  header {
     display: flex;
-    align-items: center;
+    
  }
 
-
+#dados {
+    position: absolute;
+    left: 350px;
+    top: 50px;
+}
 .imagem__perfil {
-    width: 100px;
+    width: 150px;
     border-radius: 50%;
-    border: 2px solid #d01632;
-    margin: 0 10px; 
-    outline: calc(100px / 2) solid #0009;
-    outline-offset: calc(100px / -2);
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
+    position: relative;
+    left: 3em;
+    top: 1em;
+   
     
 }
 
 .imagem__perfil:hover {
-    outline: 8px solid #5d52a2;
-    outline-offset: 5px;
+    outline: 8px solid var(--cor-cargo);
+    outline-offset: 10px;
   }
 
   .nome {
@@ -91,6 +96,7 @@ body {
 
 
 .experiencia__profissional {
+    margin-top: 3em;
     margin-right: 10em;
     margin-left: 10px ;
     width: 50%;

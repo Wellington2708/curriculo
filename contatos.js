@@ -4,7 +4,7 @@ document.getElementById("botao").addEventListener("click", function(){
             <ol  id="dados__contato">
             <li class="nome">Nome: Wellington Luis Pereira Junior</li>
             <li>Data de nascimento: <span id="nascimento">27/08/1988</span></li>
-            <li>Idade: <span id="idade">0</span></li>
+            <li>Idade: <span id="idade">34</span></li>
             <li>Telefone: ********* </li>
             <li>Morada: <span id="morada">Vila Nova de Famalicão - Porto</span> </li>
             <li class="cor__link"><i class="fa-solid fa-envelope"></i><a class="email" href="*********">Enviar Email</a></li>
