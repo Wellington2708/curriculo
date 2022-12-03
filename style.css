@@ -47,7 +47,7 @@ body {
     background-color: var(--background-body);
 }
 
-#botao {
+#botao , #omitir__dados {
     border-radius: 30px;
     text-align: center;
     color: var(--cor-principal);
