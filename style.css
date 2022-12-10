@@ -39,9 +39,10 @@ body {
     color: var(--cor-preto);
 }
 
+
+
 #dados__contato {
     margin: 30px;
-    width: 100%;
     color: var(--dados-contato);
     font-size: 18px;
     background-color: var(--background-body);
@@ -87,10 +88,11 @@ body {
 
 
 .experiencia__profissional {
+    display: inline;
     margin-top: 2em;
     margin-right: 15px;
     margin-left: 10px ;
-    width: 100%;
+    width: 100vw;
 
 }
 
@@ -101,9 +103,10 @@ body {
 } 
 
 .estudos {
+    
     margin-top: 2em;
-    width: 100%;
-    height: 100%;
+    width: 50vw;
+   
     
 }
 
