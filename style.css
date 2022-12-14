@@ -21,6 +21,14 @@ body {
     display: flex;
  }
 
+.imagem {
+    display: flex;
+}
+
+.dados {
+    width: 100vw;
+}
+
 .imagem__perfil {
     width: 150px;
     border-radius: 50%;
@@ -46,17 +54,18 @@ body {
     color: var(--dados-contato);
     font-size: 18px;
     background-color: var(--background-body);
+    position: relative;
 }
 
-#botao , #omitir__dados {
+#botao {
     border-radius: 30px;
     text-align: center;
     color: var(--cor-principal);
     background-color: var(--cor-cargo);
     text-transform: uppercase;
-    position: relative;
     margin: 85px 0 10px 20px;
     padding: 1em;
+    display: flex;
 }
 
 .cor__link , a {
@@ -103,10 +112,9 @@ body {
 } 
 
 .estudos {
-    
+    width: 100%;
     margin-top: 2em;
-    width: 50vw;
-   
+    display: block;
     
 }
 
