@@ -10,6 +10,11 @@ document.getElementById("botao").addEventListener("click", function(){
                 <li class="cor__link"><i class="fa-solid fa-envelope"></i><a class="email" href="https://wellingtondevelopercontact@gmail.com">Enviar E-mail</a></li>
                 <li class="cor__link"><i class="fa-brands fa-linkedin"></i><a class="linkedin" href="https://www.linkedin.com/in/wellington-junior-41513874/">Home Page</a></li>  
                 <li class="cor__link"><i class="fa-brands fa-github"></i><a class="gitHub" href="https://github.com/Wellington2708">Home Page</a></li>
-            </ol> `
-    });
+            </ol> 
+            <button class="fechar">Fechar X</button>`
+
+           
+               });
+
+
 

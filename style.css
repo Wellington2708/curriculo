@@ -148,3 +148,11 @@ table ,th, tr, td {
     border-color: var(--cor-preto);
 }
 
+.fechar {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size:30px ;
+    color: purple;
+    position: absolute;
+    top: 278px;
+}
