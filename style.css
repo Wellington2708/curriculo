@@ -9,32 +9,27 @@
     --cor-tabelaTitulo: rgb(177, 64, 19);
 }
 
-
 body {
     font-family: 'Roboto Mono', monospace;
     font-family: 'Teko', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     background: var(--background-body)
 }
 
- header {
+header {
     display: flex;
  }
 
-.imagem {
-    display: flex;
-}
-
 .dados {
-    width: 100vw;
+    width: 20vw;
 }
 
 .imagem__perfil {
-    width: 150px;
+    width: 100px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.5s;
-    margin: 20px ;
+    margin: 20px 0px 20px 20px ;
 }
 
 .imagem__perfil:hover {
@@ -50,11 +45,11 @@ body {
 
 
 #dados__contato {
-    margin: 30px;
+    margin: 10px 0 0 34px;
     color: var(--dados-contato);
-    font-size: 18px;
+    font-size: 14px;
     background-color: var(--background-body);
-    position: relative;
+    position: absolute;
 }
 
 #botao {
@@ -63,8 +58,20 @@ body {
     color: var(--cor-principal);
     background-color: var(--cor-cargo);
     text-transform: uppercase;
-    margin: 85px 0 10px 20px;
-    padding: 1em;
+    margin: 55px 0 0 50px;
+    padding: 0.5em;
+    display: flex;
+}
+
+#fechar {
+    font-size: 17px;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--cor-principal);
+    background-color: var(--cor-cargo);
+    text-transform: uppercase;
+    margin: 55px 0 0 50px;
+    padding: 0.5em;
     display: flex;
 }
 
@@ -148,11 +155,12 @@ table ,th, tr, td {
     border-color: var(--cor-preto);
 }
 
-.fechar {
+#fechar {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
     font-size:30px ;
     color: purple;
     position: absolute;
-    top: 278px;
+    top: 200px;
+    left: 218px;
 }
