@@ -64,15 +64,23 @@ header {
 }
 
 #fechar {
+    
+    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     border-radius: 30px;
     text-align: center;
-    color: var(--cor-principal);
     background-color: var(--cor-cargo);
+    color: var(--cor-principal);
     text-transform: uppercase;
     margin: 55px 0 0 50px;
     padding: 0.5em;
-    display: flex;
+    
+
+  
+    font-weight: 800;
+    position: absolute;
+    top: 68px;
+    right:  30px;
 }
 
 .cor__link , a {
@@ -156,11 +164,5 @@ table ,th, tr, td {
 }
 
 #fechar {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
-    font-size:30px ;
-    color: purple;
-    position: absolute;
-    top: 200px;
-    left: 218px;
+
 }
