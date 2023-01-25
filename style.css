@@ -52,7 +52,7 @@ header {
     position: absolute;
 }
 
-#botao {
+.botao {
     border-radius: 30px;
     text-align: center;
     color: var(--cor-principal);
@@ -63,7 +63,7 @@ header {
     display: flex;
 }
 
-#fechar {
+.voltar {
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -72,11 +72,16 @@ header {
     background-color: var(--cor-cargo);
     color: var(--cor-principal);
     text-transform: uppercase;
-    top: 128px;
-    right:  33px;
+    top: 115px;
+    right:  51px;
     padding: 7px;
     font-weight: 500;
 
+}
+
+#dados__contato {
+    display: none;
+    position: absolute;
 }
 
 .cor__link , a {
