@@ -1,35 +1,41 @@
 :root {
-    --background-body: linear-gradient(180deg, #1e5270c8, #36042d5a , #1e5270c8);
+    --background-body: rgb(166, 176, 177);
     --cor-principal: #FFFFFF;
     --cor-link: #1b16b9;
     --hover-link: rgba(170, 194, 12, 0.548);
-    --dados-contato: #920c4a;
+    --dados-contato: hsl(24, 87%, 41%);
     --cor-preto: black;
     --cor-cargo: #920c4a;
     --cor-tabelaTitulo: rgb(177, 64, 19);
 }
 
+* {
+    box-sizing: 100%;
+    max-width: 100%;
+}
+
 body {
-    font-family: 'Roboto Mono', monospace;
     font-family: 'Teko', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     background: var(--background-body)
 }
 
-header {
-    display: flex;
- }
 
-.dados {
-    width: 20vw;
+.cabecalho {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    gap: 10%;
+    
 }
 
 .imagem__perfil {
-    width: 100px;
+    width: 20vw;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: grab;
     transition: 0.5s;
-    margin: 20px 0px 20px 20px ;
+    margin: 1em;
+    
 }
 
 .imagem__perfil:hover {
@@ -37,56 +43,70 @@ header {
     outline-offset: 10px;
 }
 
+.botao {
+    border-radius: 30px;
+    color: var(--cor-principal);
+    background-color: var(--cor-cargo);
+    text-transform: uppercase;
+    padding: 0.6em;  
+
+}
+
+.fechar {
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--cor-cargo);
+    color: var(--cor-principal);
+    text-transform: uppercase;
+    padding: 13px;
+    font-weight: 500;
+    margin-right: 5px;
+
+}
+
 .nome {
     font-size: 25px;
     color: var(--cor-preto);
 }
 
-
-
 #dados__contato {
-    margin: 10px 0 0 34px;
-    color: var(--dados-contato);
-    font-size: 14px;
-    background-color: var(--background-body);
-    position: absolute;
-}
-
-.botao {
-    border-radius: 30px;
-    text-align: center;
-    color: var(--cor-principal);
-    background-color: var(--cor-cargo);
-    text-transform: uppercase;
-    margin: 55px 0 0 38px;
-    padding: 0.5em;
     display: flex;
+    color: var(--dados-contato);
+    font-size: 18px;
+    background-color: var(--background-body);
+    gap: 3%;
 }
 
 .fechar {
-    position: absolute;
+    
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
-    border-radius: 40px;
+    border-radius: 20px;
     text-align: center;
     background-color: var(--cor-cargo);
     color: var(--cor-principal);
     text-transform: uppercase;
-    top: 115px;
-    right:  51px;
-    padding: 7px;
+    padding: 13px;
     font-weight: 500;
+    margin-right: 5px;
 
 }
 
-#dados__contato {
-    
-    position: absolute;
-}
+
 
 .cor__link , a {
     color: var(--cor-link);
+    
 
+}
+
+.fa-envelope {
+    color: #920c4a;
+    margin: 0;
+    padding: 0;
 }
 
 .fa-github {
@@ -96,7 +116,7 @@ header {
 
  .email, .linkedin , .gitHub, 
  .site__fasam , .curso__alura {
-    margin-left: 3px;
+    margin-left: 5px;
     text-decoration: none;
 
 }
@@ -109,28 +129,26 @@ header {
 
 .conteudo {
     display: flex;
+    justify-content: space-between;
+   
 }
 
 
 .experiencia__profissional {
-    display: inline;
-    margin-top: 2em;
-    margin-right: 15px;
-    margin-left: 10px ;
-    width: 100vw;
+    margin-top: 1.5em;
 
 }
 
 
-.experiencia , .formacao {
+.experiencia {
     color: var(--cor-preto);
     font-size: 24px;
 } 
 
 .estudos {
-    width: 100%;
-    margin-top: 2em;
-    display: block;
+
+    margin-top: 1.5em;
+    
     
 }
 
@@ -164,3 +182,60 @@ table ,th, tr, td {
     border-color: var(--cor-preto);
 }
 
+
+@media (min-width: 700px){
+
+    body {
+        font-family: 'Teko', sans-serif;
+        font-size: 25px;
+        background: var(--background-body)
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        gap: 2%;
+    
+    }
+
+    .nome {
+        font-size: 40px;
+        color: var(--cor-preto);
+    }
+
+    #dados__contato {
+        font-size: 25px;
+    }
+
+
+
+    .botao {
+        border-radius: 30px;
+        color: var(--cor-principal);
+        background-color: var(--cor-cargo);
+        text-transform: uppercase;
+        padding: 1.3em;
+    
+    }
+
+    .fechar {
+        font-size: 20px;
+        border-radius: 50%;
+        background-color: var(--cor-cargo);
+        color: var(--cor-principal);
+        text-transform: uppercase;
+        padding: 25px;
+        text-align: center;
+    
+    
+    }
+    
+    .experiencia__profissional {
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 1057px;    
+    
+    }
+}
+    
