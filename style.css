@@ -126,10 +126,8 @@ body {
     color: var(--hover-link);
 }
 
-
 .conteudo {
-    display: flex;
-    justify-content: space-between;
+    margin: 1em;
    
 }
 
@@ -148,8 +146,7 @@ body {
 .estudos {
 
     margin-top: 1.5em;
-    
-    
+     
 }
 
 h2 {
@@ -158,7 +155,6 @@ h2 {
 }
 
 .periodo {
-    color: var(--cor-principal);
     padding: 0.3em;
 }
 
@@ -182,6 +178,9 @@ table ,th, tr, td {
     border-color: var(--cor-preto);
 }
 
+table {
+    width: 20%;
+}
 
 @media (min-width: 700px){
 
@@ -237,5 +236,12 @@ table ,th, tr, td {
         height: 1057px;    
     
     }
+
+    .conteudo {
+        display: flex;
+        gap: 200px;
+    
+
 }
     
+}
