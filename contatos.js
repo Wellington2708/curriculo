@@ -29,10 +29,10 @@
 
 
  function fecharDados (){
-    document.querySelector("#dados__contato").innerHTML = `
+    let botaoDeFechar = document.querySelector("#dados__contato");
+    botaoDeFechar.innerHTML = `
     <div id="dados">
         <button onclick="mostrarDados()" class="botao">Dados para contato</button>
     </div> 
     `
  }
-
