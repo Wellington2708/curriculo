@@ -2,7 +2,7 @@
     --background-body: rgb(166, 176, 177);
     --cor-principal: #FFFFFF;
     --cor-link: #1b16b9;
-    --hover-link: rgba(170, 194, 12, 0.548);
+    --hover-link: rgba(239, 17, 184, 0.548);
     --dados-contato: hsl(24, 87%, 41%);
     --cor-preto: black;
     --cor-cargo: #920c4a;
@@ -30,8 +30,9 @@ body {
 }
 
 .imagem__perfil {
-    width: 20vw;
-    border-radius: 50%;
+    width: 180px;
+    height: 230px;
+    border-radius: 100%;
     cursor: grab;
     transition: 0.5s;
     margin: 1em;
@@ -50,6 +51,10 @@ body {
     text-transform: uppercase;
     padding: 0.6em;  
 
+}
+
+.divisao {
+   border-color: #920c4a;
 }
 
 .fechar {
@@ -182,7 +187,8 @@ table {
     width: 20%;
 }
 
-@media (min-width: 700px){
+@media (min-width: 800px){
+
 
     body {
         font-family: 'Teko', sans-serif;
@@ -193,8 +199,14 @@ table {
     .cabecalho {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 2%;
     
+    }
+
+    .imagem__perfil {
+        width: 300px;
+        height: 350px;
     }
 
     .nome {
@@ -245,3 +257,5 @@ table {
 }
     
 }
+
+

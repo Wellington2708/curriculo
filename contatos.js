@@ -1,7 +1,12 @@
 
  
 
- var botao = document.querySelector(".botao");
+var botao = document.querySelector(".botao");
+var dadosContato = document.querySelector("#dados");
+
+
+
+
  botao.addEventListener("click", mostrarDados);
  
  function mostrarDados (){
@@ -26,13 +31,13 @@
     `
  }
 
-
-
  function fecharDados (){
-    let botaoDeFechar = document.querySelector("#dados__contato");
-    botaoDeFechar.innerHTML = `
+    var fecharDados = dadosContato;
+    fecharDados.innerHTML = `
     <div id="dados">
         <button onclick="mostrarDados()" class="botao">Dados para contato</button>
     </div> 
     `
- }
+
+ 
+}
