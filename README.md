@@ -1,11 +1,34 @@
-# curriculo
-Feito apenas com HTML e CSS.
-Projeto tem sido desenvolvido de acordo com 
-minha evolução no aprendizado.
-Aprendizado esse que vem sendo adquirido constantemente e diariamente atráves dos cursos
-feitos na Alura, e colocado em prática através de projetos como esse.
-A tendência é que com o passar do tempo, o currículo se torne mais dinâmico e com 
-interações com quem o acessa. 
-A ideia é que ao visualizá-lo, o usuário consiga adquitir informações
-atráves de sua busca e interação com o contéudo descrito. 
-<img width="835" alt="Captura de Tela 2022-11-12 às 19 07 01" src="https://user-images.githubusercontent.com/110790543/201490679-f62843a9-6d1f-4a7d-8775-0594b3e51b3c.png">
+Curriculum Vitae
+
+Esse projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor frontend ao mesmo tempo em que apresento minha experiência profissional e acadêmica. 
+Estou em transição de carreira, como é possível notar , e o utilizei para evidenciar que tenho experiência com produção, gestão, trabalho em equipe e muita vontade de melhorar e evoluir diariamente.  
+
+Utilizei  HTML, CSS e Javascript, colocando em prática o aprendizado diário com cursos já finalizados e em andamento. 
+
+
+___________________________________________________________________
+
+Modo de utilização :
+
+
+  Para melhor utilização do website, é indicado que utilize o botão clicável, pois através dele será informado todos meus dados de contato. Para desfazer a ação é necessário clicar no botão que contém um X. 
+  Ao passar o mouse pela foto de perfil, haverá uma pequena animação. 
+ O Curriculum foi dividido em Experiências Profissionais e Estudos, contendo também meu nível de inglês e espanhol. 
+
+___________________________________________________________________
+
+
+Contatos: 
+
+
+Para entrar em contato comigo, basta acessar meu linkedin através do link 
+https://www.linkedin.com/in/wellington-junior-41513874/  ou pelo email 
+wellingtondevelopercontact@gmail.com.
+
+
+______________________________
+
+Imagem do layout
+
+![Projeto](https://flic.kr/p/2oGxWsK)
+

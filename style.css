@@ -7,6 +7,8 @@
     --cor-preto: black;
     --cor-cargo: #920c4a;
     --cor-tabelaTitulo: rgb(177, 64, 19);
+    --period-color: rgb(119, 137, 137);
+    
 }
 
 * {
@@ -17,19 +19,20 @@
 body {
     font-family: 'Teko', sans-serif;
     font-size: 20px;
-    background: var(--background-body)
+    background: var(--cor-principal)
 }
 
 
-.cabecalho {
+.header {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 60%;
     gap: 10%;
     
 }
 
-.imagem__perfil {
+.profile__picture {
     width: 180px;
     height: 230px;
     border-radius: 100%;
@@ -39,25 +42,25 @@ body {
     
 }
 
-.imagem__perfil:hover {
+.profile__picture:hover {
     outline: 8px solid var(--cor-cargo);
     outline-offset: 10px;
 }
 
-.botao {
+.button {
     border-radius: 30px;
     color: var(--cor-principal);
     background-color: var(--cor-cargo);
     text-transform: uppercase;
-    padding: 0.6em;  
+    padding: 0.7em;  
 
 }
 
-.divisao {
+.endFirstPart {
    border-color: #920c4a;
 }
 
-.fechar {
+.close {
     
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -72,37 +75,22 @@ body {
 
 }
 
-.nome {
+.name {
     font-size: 25px;
     color: var(--cor-preto);
 }
 
-#dados__contato {
+#contact__datas {
     display: flex;
     color: var(--dados-contato);
     font-size: 18px;
-    background-color: var(--background-body);
+    background-color: var(--cor-principal);
     gap: 3%;
 }
 
-.fechar {
-    
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: var(--cor-cargo);
-    color: var(--cor-principal);
-    text-transform: uppercase;
-    padding: 13px;
-    font-weight: 500;
-    margin-right: 5px;
-
-}
 
 
-
-.cor__link , a {
+.link__color , a {
     color: var(--cor-link);
     
 
@@ -120,35 +108,36 @@ body {
 }
 
  .email, .linkedin , .gitHub, 
- .site__fasam , .curso__alura {
+ .fasam__website , .alura__course {
     margin-left: 5px;
     text-decoration: none;
 
 }
 
 .email:hover , .linkedin:hover , .gitHub:hover , 
-.site__fasam:hover , .curso__alura:hover {
+.fasam__website:hover , .alura__course:hover {
     color: var(--hover-link);
 }
 
-.conteudo {
+.professional {
     margin: 1em;
    
 }
 
 
-.experiencia__profissional {
+.professional__experience {
     margin-top: 1.5em;
 
 }
 
 
-.experiencia {
+.experience {
     color: var(--cor-preto);
     font-size: 24px;
+    text-transform: uppercase;
 } 
 
-.estudos {
+.studies {
 
     margin-top: 1.5em;
      
@@ -159,12 +148,13 @@ h2 {
     margin: 10px 0 5px 0;
 }
 
-.periodo {
+.period {
     padding: 0.3em;
+    color: var(--period-color);
 }
 
 
-.itens {
+.items {
     list-style: inside;
    
 }
@@ -178,58 +168,69 @@ table ,th, tr, td {
     
 }
 
-.cabecalho__tabela {
-    color: var(--cor-tabelaTitulo);
-    border-color: var(--cor-preto);
-}
-
 table {
     width: 20%;
 }
 
-@media (min-width: 800px){
+.table__header {
+    color: var(--cor-tabelaTitulo);
+    border-color: var(--cor-preto);
+}
 
+
+
+@media (min-width: 600px){
+
+
+    * {
+        box-sizing: 100%;
+        max-width: 100%;
+    }
 
     body {
         font-family: 'Teko', sans-serif;
         font-size: 25px;
-        background: var(--background-body)
+        background: var(--cor-principal)
     }
 
-    .cabecalho {
+    .header {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2%;
+        gap: 10%;
     
     }
 
-    .imagem__perfil {
+    .profile__picture {
         width: 300px;
         height: 350px;
     }
 
-    .nome {
+    .name {
         font-size: 40px;
         color: var(--cor-preto);
     }
 
-    #dados__contato {
+    strong {
+        color: red;
+    }
+
+    #contact__datas {
         font-size: 25px;
     }
 
 
 
-    .botao {
+    .button {
         border-radius: 30px;
         color: var(--cor-principal);
         background-color: var(--cor-cargo);
         text-transform: uppercase;
-        padding: 1.3em;
+        padding: 0.7em;
     
     }
 
-    .fechar {
+    .close{
         font-size: 20px;
         border-radius: 50%;
         background-color: var(--cor-cargo);
@@ -241,20 +242,21 @@ table {
     
     }
     
-    .experiencia__profissional {
+
+    .professional {
+        display: flex;
+        gap: 200px;
+    
+
+    }
+
+    .professional__experience {
         
         flex-direction: column;
         flex-wrap: wrap;
         height: 1057px;    
     
     }
-
-    .conteudo {
-        display: flex;
-        gap: 200px;
-    
-
-}
     
 }
 
