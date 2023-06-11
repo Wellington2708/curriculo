@@ -30,5 +30,6 @@ ______________________________
 
 Imagem do layout
 
-![Projeto](https://flic.kr/p/2oGxWsK)
+![curriculo](https://github.com/Wellington2708/curriculo/assets/110790543/bd870bcd-f9cf-42fd-a93c-81c5a7191ac3)
+
 
