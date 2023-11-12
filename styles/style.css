@@ -2,18 +2,18 @@
     --background-body: rgb(166, 176, 177);
     --cor-principal: #FFFFFF;
     --cor-link: #1b16b9;
-    --hover-link: rgba(239, 17, 184, 0.548);
+    --hover-link: rgba(12, 12, 11, 0.548);
     --dados-contato: hsl(24, 87%, 41%);
     --cor-preto: black;
     --cor-cargo: #920c4a;
     --cor-tabelaTitulo: rgb(177, 64, 19);
     --period-color: rgb(119, 137, 137);
-    
+
 }
 
 * {
-    box-sizing: 100%;
-    max-width: 100%;
+    box-sizing: border-box;
+
 }
 
 body {
@@ -27,9 +27,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60%;
     gap: 10%;
-    
+
 }
 
 .profile__picture {
@@ -37,13 +36,13 @@ body {
     height: 230px;
     border-radius: 100%;
     cursor: grab;
-    transition: 0.5s;
+    transition: 0.2s;
     margin: 1em;
-    
+
 }
 
 .profile__picture:hover {
-    outline: 8px solid var(--cor-cargo);
+    outline: 2px solid var(--cor-cargo);
     outline-offset: 10px;
 }
 
@@ -52,16 +51,20 @@ body {
     color: var(--cor-principal);
     background-color: var(--cor-cargo);
     text-transform: uppercase;
-    padding: 0.7em;  
+    padding: 0.7em;
 
+}
+
+.button:hover {
+    background-color: var(--cor-link);
 }
 
 .endFirstPart {
-   border-color: #920c4a;
+    border-color: #920c4a;
 }
 
 .close {
-    
+
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     border-radius: 20px;
@@ -90,9 +93,10 @@ body {
 
 
 
-.link__color , a {
+.link__color,
+a {
     color: var(--cor-link);
-    
+
 
 }
 
@@ -107,27 +111,39 @@ body {
     background-color: var(--cor-preto);
 }
 
- .email, .linkedin , .gitHub, 
- .fasam__website , .alura__course {
+.email,
+.linkedin,
+.gitHub,
+.fasam__website,
+.alura__course {
     margin-left: 5px;
     text-decoration: none;
 
 }
 
-.email:hover , .linkedin:hover , .gitHub:hover , 
-.fasam__website:hover , .alura__course:hover {
+.email:hover,
+.linkedin:hover,
+.gitHub:hover,
+.fasam__website:hover,
+.alura__course:hover {
     color: var(--hover-link);
 }
 
-.professional {
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.professional,
+.skills {
     margin: 1em;
-   
+
 }
 
 
-.professional__experience {
+.professional__experience,
+.studies {
     margin-top: 1.5em;
-
 }
 
 
@@ -135,12 +151,6 @@ body {
     color: var(--cor-preto);
     font-size: 24px;
     text-transform: uppercase;
-} 
-
-.studies {
-
-    margin-top: 1.5em;
-     
 }
 
 h2 {
@@ -156,16 +166,19 @@ h2 {
 
 .items {
     list-style: inside;
-   
+
 }
 
 
-table ,th, tr, td {
+table,
+th,
+tr,
+td {
     border: 1px solid;
     border-collapse: collapse;
     padding: 0.1em;
     text-align: center;
-    
+
 }
 
 table {
@@ -177,15 +190,21 @@ table {
     border-color: var(--cor-preto);
 }
 
+.language__english,
+.language__spanish {
+    display: none;
+}
 
 
-@media (min-width: 600px){
+
+@media (max-width: 738px) {
 
 
     * {
-        box-sizing: 100%;
-        max-width: 100%;
+        box-sizing: border-box;
     }
+
+
 
     body {
         font-family: 'Teko', sans-serif;
@@ -195,15 +214,17 @@ table {
 
     .header {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 10%;
-    
+
     }
 
     .profile__picture {
-        width: 300px;
-        height: 350px;
+
+        width: 150px;
+        height: 150px;
     }
 
     .name {
@@ -227,37 +248,28 @@ table {
         background-color: var(--cor-cargo);
         text-transform: uppercase;
         padding: 0.7em;
-    
+
     }
 
-    .close{
-        font-size: 20px;
-        border-radius: 50%;
-        background-color: var(--cor-cargo);
-        color: var(--cor-principal);
-        text-transform: uppercase;
-        padding: 25px;
-        text-align: center;
-    
-    
-    }
-    
-
-    .professional {
+    .container {
         display: flex;
-        gap: 200px;
-    
-
-    }
-
-    .professional__experience {
-        
         flex-direction: column;
-        flex-wrap: wrap;
-        height: 1057px;    
-    
+        justify-content: center;
+        align-items: center;
     }
-    
+
+    table {
+        display: none;
+    }
+
+    .period {
+        display: none;
+    }
+
+
+
+    .language__english,
+    .language__spanish {
+        display: flex;
+    }
 }
-
-

@@ -12,11 +12,11 @@
         rel="stylesheet">
 
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
 
 </head>
@@ -29,136 +29,148 @@
         </div>
 
         <div id="datas">
-            <button class="button" onclick="showDatas()">My datas</button>
+            <button class="button" onclick="datas('27/08/1988', 351,938204083,35, 'Vila Nova de Famalicão', 'Portugal')">My datas</button>
         </div>
     </header>
+    <div>
         <hr class="endFirstPart "> <!--Splits the header and the remainder-->
-      <section class="professional">
-        <div class="professional__experience">
-            <h1 class="experience" >Professional Experience</h1>
-            <!--First Experience-->
-            <h2>Dispatch Supervisor - Natuflores - Goiânia - BR</h2>
-             <p class="period">Date: 2021-02-16 to 2022-03-01 </p>
-             <ul>
-                <li class="items">Responsible for picking and sending orders to customers.</li>
-                <li class="items">Logistics control.</li>
-                <li class="items">Production assistant.</li>
-                <li class="items">Stock organization.</li>
-             </ul>
+    </div>
+    <div class="container">
+        <section class="professional">
+                <div class="professional__experience">
+                    <h1 class="experience">Professional Experience</h1>
+                    <!--First Experience-->
+                    <h2>Dispatch Supervisor - Natuflores - Goiânia - BR</h2>
+                    <p class="period">Date: 2021-02-16 to 2022-03-01 </p>
+                    <ul>
+                        <li class="items">Responsible for picking and sending orders to customers.</li>
+                        <li class="items">Logistics control.</li>
+                        <li class="items">Production assistant.</li>
+                        <li class="items">Stock organization.</li>
+                    </ul>
 
-            <!--Second Experience-->
-            <h2>Front attendant/Supplier - GALP TROFA - Portugal</h2>
-             <p class="period">Date: 2019-01-01 to 2019-06-15 </p>
-             <ul>
-                <li class="items">Responsible for fueling customer vehicles.</li>
-                <li class="items">Washing and drying.</li>
-                <li class="items">Inventory supply.</li>
-             </ul>
+                    <!--Second Experience-->
+                    <h2>Front attendant/Supplier - GALP TROFA - Portugal</h2>
+                    <p class="period">Date: 2019-01-01 to 2019-06-15 </p>
+                    <ul>
+                        <li class="items">Responsible for fueling customer vehicles.</li>
+                        <li class="items">Washing and drying.</li>
+                        <li class="items">Inventory supply.</li>
+                    </ul>
 
-            <!--Third Experience-->
-            <h2>Production Assistant - DECOR - Goiânia - BR</h2>
-             <p class="period">Date: 01-10-2012 to 01-07-2013 - Goiânia - BR </p>
-             <ul>
-                <li class="items">Production of construction parts and materials</li>
-                <li class="items">Inventory control, sending orders to the customer.</li>
-             </ul>
+                    <!--Third Experience-->
+                    <h2>Production Assistant - DECOR - Goiânia - BR</h2>
+                    <p class="period">Date: 01-10-2012 to 01-07-2013 - Goiânia - BR </p>
+                    <ul>
+                        <li class="items">Production of construction parts and materials</li>
+                        <li class="items">Inventory control, sending orders to the customer.</li>
+                    </ul>
 
-            <!--Fourth Experience-->
-            <h2>Administrative Assistant – Nuclear CDI - Goiânia</h2>
-             <p class="period">Date: 01-10-2013 to 09-07-2016 - Goiânia - BR </p>
-             <ul>
-                 <li class="items">Responsible for charging for services provided.</li>
-                 <li class="items">Contract renewal negotiation.</li>
-                 <li class="items">Customer service.</li>
-                 <li class="items">Invoice Control.</li>
-                 <li class="items">Typist</li>
-                 <li class="items">Accounts payable control</li>
-             </ul>
+                    <!--Fourth Experience-->
+                    <h2>Administrative Assistant – Nuclear CDI - Goiânia</h2>
+                    <p class="period">Date: 01-10-2013 to 09-07-2016 - Goiânia - BR </p>
+                    <ul>
+                        <li class="items">Responsible for charging for services provided.</li>
+                        <li class="items">Contract renewal negotiation.</li>
+                        <li class="items">Customer service.</li>
+                        <li class="items">Invoice Control.</li>
+                        <li class="items">Typist</li>
+                        <li class="items">Accounts payable control</li>
+                    </ul>
 
-            <!--]Fifth Experience-->
-            <h2>Administrative Assistant – CEBRAMEN - Goiânia - BR</h2>
-             <p class="period">Date: 08-03-2018 to 07-07-2019 - Goiânia - BR </p>
-             <ul>
-                 <li class="items">Responsible for charging for services provided.</li>
-                 <li class="items">Invoice Control.</li>
-                 <li class="items">Typist.</li>
-                 <li class="items">Accounts payable control</li>
-                 <li class="items">Archivist</li>
-                 <li class="items">Purchases</li>
-             </ul>
-        </div>
-        <div class="studies">
-            <h1 class="experience">Education and training</h1>
-            <h2>Front-end developer - Alura Course - </h2><a
-                 href="https://cursos.alura.com.br/user/WELLINGTONJUNIOR1027/fullCertificate/c896cb400ceeed3f9eb92524a7755db3"
-                 class="link__color alura__course">Alura Certificates</a>
-             <p class="period">Date: 5/1/2022–Currently</p>
+                    <!--]Fifth Experience-->
+                    <h2>Administrative Assistant – CEBRAMEN - Goiânia - BR</h2>
+                    <p class="period">Date: 08-03-2018 to 07-07-2019 - Goiânia - BR </p>
+                    <ul>
+                        <li class="items">Responsible for charging for services provided.</li>
+                        <li class="items">Invoice Control.</li>
+                        <li class="items">Typist.</li>
+                        <li class="items">Accounts payable control</li>
+                        <li class="items">Archivist</li>
+                        <li class="items">Purchases</li>
+                    </ul>
+                </div>
+        
+        </section>
+        <section class="skills">
+            <div class="studies">
+                <h1 class="experience">Education and training</h1>
+                <h2>Front-end developer - Alura Course - </h2><a
+                    href="https://cursos.alura.com.br/user/WELLINGTONJUNIOR1027/fullCertificate/c896cb400ceeed3f9eb92524a7755db3"
+                    class="link__color alura__course">Alura Certificates</a>
+                <p class="period">Date: 5/1/2022–Currently</p>
 
-             <ul>
-                 <li class="items">Study Field: Frontend Developer</li>
-                 <li class="items">HTML</li>
-                 <li class="items">CSS</li>
-                 <li class="items">JavaScript</li>
-                 <li class="items">Programming Logic</li>
-                 <li class="items">GIT</li>
+                <ul>
+                    <li class="items">Study Field: Frontend Developer</li>
+                    <li class="items">HTML</li>
+                    <li class="items">CSS</li>
+                    <li class="items">JavaScript</li>
+                    <li class="items">Programming Logic</li>
+                    <li class="items">GIT</li>
 
 
-             </ul>
-             <h2>People Management- FASAM - FACULDADE SUL AMERICANA</h2>
-             <p class="period">Date: 01/01/2011 – 12/31/2011 – APARECIDA DE GOIANIA</p><a href="https://fasam.edu.br/"
-                 class="link__color fasam__website">FASAM WEBSITE</a>
+                </ul>
+                <h2>People Management- FASAM - FACULDADE SUL AMERICANA</h2>
+                <p class="period">Date: 01/01/2011 – 12/31/2011 – APARECIDA DE GOIANIA</p><a href="https://fasam.edu.br/"
+                    class="link__color fasam__website">FASAM WEBSITE</a>
 
-             <ul>
-                 <li class="items">Work Psychology.</li>
-                 <li class="items">Business Communication.</li>
-                 <li class="items">Organizational Development</li>
-                 <li class="items">Stock organization.</li>
-                 <li class="items">Management of Organizations.</li>
-                 <li class="items">People Management.</li>
-                 <li class="items">Strategic Management</li>
-                 <li class="items">Personnel Department Administration ◦ Recruitment and Selection of People.</li>
-                 <li class="items">Labour Relations</li>
-                 <li class="items">HR Training and Development</li>
+                <ul>
+                    <li class="items">Work Psychology.</li>
+                    <li class="items">Business Communication.</li>
+                    <li class="items">Organizational Development</li>
+                    <li class="items">Stock organization.</li>
+                    <li class="items">Management of Organizations.</li>
+                    <li class="items">People Management.</li>
+                    <li class="items">Strategic Management</li>
+                    <li class="items">Personnel Department Administration ◦ Recruitment and Selection of People.</li>
+                    <li class="items">Labour Relations</li>
+                    <li class="items">HR Training and Development</li>
 
-             </ul>
+                </ul>
 
-             <h2>LANGUAGE LEVEL</h2>
-             <h2 class="native__language">Native language: Portuguese</h2>
-             <table>
-                 <tr>
-                     <th class="table__header">LANGUAGE</th>
-                     <th class="table__header">UNDERSTANDING</th>
-                     <th class="table__header">TALK</th>
-                     <th class="table__header">WRITE</th>
-                 </tr>
-                 <tr>
-                     <td>-</td>
-                     <td>Listening</td>
-                     <td>Oral Production</td>
-                     <td>Oral Interaction</td>
-                 </tr>
-                 <tr>
-                     <td>ENGLISH</td>
-                     <td>A2</td>
-                     <td>A2</td>
-                     <td>A2</td>
-                 </tr>
-                 <tr>
-                     <td>SPANISH</td>
-                     <td>B1</td>
-                     <td>B1</td>
-                     <td>B1</td>
-                 </tr>
+                <h2>LANGUAGE LEVEL</h2>
+                <h2 class="native__language">Native language: Portuguese</h2>
+                <h2 class="language__english">English: Listening, Talk and Writing - A2</h2>
+                <h2 class="language__spanish">English: Listening, Talk and Writing - B1</h2>
 
-             </table>
+                <table>
+                    <tr>
+                        <th class="table__header">LANGUAGE</th>
+                        <th class="table__header">UNDERSTANDING</th>
+                        <th class="table__header">TALK</th>
+                        <th class="table__header">WRITE</th>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Listening</td>
+                        <td>Oral Production</td>
+                        <td>Oral Interaction</td>
+                    </tr>
+                    <tr>
+                        <td>ENGLISH</td>
+                        <td>A2</td>
+                        <td>A2</td>
+                        <td>A2</td>
+                    </tr>
+                    <tr>
+                        <td>SPANISH</td>
+                        <td>B1</td>
+                        <td>B1</td>
+                        <td>B1</td>
+                    </tr>
 
-             <p class="period" style="color:rgb(206, 75, 15)">Levels: A1 and A2: Base user; B1 and B2: Independent user; C1 and C2:
-                 Advanced user</p>
-        </div>
-    </section> 
+                </table>
+                
 
-    <script src="contacts.js"></script>
-    <script src="toClose.js"></script>
+                <p class="period" style="color:rgb(206, 75, 15)">Levels: A1 and A2: Base user; B1 and B2: Independent user;
+                    C1 and C2:
+                    Advanced user</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/contacts.js"></script>
+    <script src="./js/toClose.js"></script>
 
 
 </body>
