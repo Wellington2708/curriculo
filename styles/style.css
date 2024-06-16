@@ -12,6 +12,7 @@
 }
 
 * {
+    
     box-sizing: border-box;
 
 }
@@ -46,7 +47,7 @@ body {
     outline-offset: 10px;
 }
 
-.button {
+.button__datas {
     border-radius: 30px;
     color: var(--cor-principal);
     background-color: var(--cor-cargo);
@@ -55,7 +56,7 @@ body {
 
 }
 
-.button:hover {
+.button__datas:hover {
     background-color: var(--cor-link);
 }
 
@@ -83,7 +84,7 @@ body {
     color: var(--cor-preto);
 }
 
-#contact__datas {
+.contact__datas {
     display: flex;
     color: var(--dados-contato);
     font-size: 18px;
@@ -200,16 +201,9 @@ table {
 @media (max-width: 738px) {
 
 
-    * {
-        box-sizing: border-box;
-    }
-
-
 
     body {
-        font-family: 'Teko', sans-serif;
         font-size: 25px;
-        background: var(--cor-principal)
     }
 
     .header {
@@ -236,13 +230,13 @@ table {
         color: red;
     }
 
-    #contact__datas {
+    .contact__datas {
         font-size: 25px;
     }
 
 
 
-    .button {
+    .button__datas {
         border-radius: 30px;
         color: var(--cor-principal);
         background-color: var(--cor-cargo);

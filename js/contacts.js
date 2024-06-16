@@ -1,39 +1,43 @@
-/*//Data variables
+const datas = {
+    name: 'Wellington',
+    lastName: 'Junior',
+    birth: '27/08/1988',
+    age: 35,
+    prefix: 351,
+    number: 938204083,
+    city: 'Vila Nova de Famalicão',
+    country: 'Portugal',
+    email: 'wellingtondevelopercontact@gmail.com'
+};
 
-let countryNumber = 351;
-let phoneNumber = 938204083;
-let age = 34;
-let city = 'Vila Nova de Famalicão';
-let country = 'Portugal';
+let containerButton = document.querySelector("#datas");
 
-//functions variables
+containerButton.addEventListener("click", (event) => {
+    if (event.target.classList.contains('button__datas')) {
+        containerButton.innerHTML = `
+        <div id="contact__datas" class="contact__datas"> 
+            <ul class="header__list__contacts">
+                <li class="name">Name: ${datas.name} ${datas.lastName}</li>
+                <li><strong>Date of birth:</strong> ${datas.birth}</li>
+                <li><strong>Age:</strong> ${datas.age}</li>
+                <li><strong>Phone Number:</strong> ${'+(' + datas.prefix}) ${datas.number}</li>
+                <li><strong>City:</strong> ${datas.city}</li>
+                <li><strong>Country:</strong> ${datas.country}</li>
+                <li class="link__color"><i class="fa-solid fa-envelope"></i><a class="email" href="mailto:${datas.email}" target='_blank'>Email</a></li>
+                <li class="link__color"><i class="fa-brands fa-linkedin"></i><a class="linkedin" href="https://www.linkedin.com/in/wellington-junior-41513874/" target='_blank'>Linkedin</a></li>  
+                <li class="link__color"><i class="fa-brands fa-github"></i><a class="gitHub" href="https://github.com/Wellington2708" target='_blank'>GitHub</a></li>   
+            </ul>
+            <div>
+                <button class="close">X</button> 
+            </div> 
+        </div>
+        `;
+    }else{
+        containerButton.innerHTML = `
+        <div id="datas" class="contact__datas">
+            <button class="button__datas">My datas</button>
+        </div>
+    `;
+    }
 
-let contactDatas = document.querySelector("#datas");
-
-*/
-
-function datas(birth, prefix, number, age, city, country){
-    let contactDatas = document.querySelector("#datas");
-    contactDatas.innerHTML = `
-    <div id="contact__datas"> 
-        <ul class="cabecalho__lista__contatos">
-            <li class="name">Name: Wellington Junior</li>
-            <li><strong>Date of birth:</strong> ${birth}</li>
-            <li><strong>Age:</strong>  ${age}</li>
-            <li><strong>Phone Number:</strong> ${'+' + prefix} ${number} </li>
-            <li><strong>City:</strong> ${city}</li>
-            <li><strong>Country:</strong> ${country}</li>
-            <li class="link__color"><i class="fa-solid fa-envelope"></i><a class="email" href="mailto:wellingtondevelopercontact@gmail.com">Email</a></li>
-            <li class="link__color"><i class="fa-brands fa-linkedin"></i><a class="linkedin" href="https://www.linkedin.com/in/wellington-junior-41513874/">Linkedin</a></li>  
-            <li class="link__color"><i class="fa-brands fa-github"></i><a class="gitHub" href="https://github.com/Wellington2708">GitHub</a></li>   
-        
-        </ul>
-        <div>
-            <button onclick="toCloseDatas()" class="close" >X</button> 
-        </div> 
-    </div>
-    `
-    
-
-
-}
+});
