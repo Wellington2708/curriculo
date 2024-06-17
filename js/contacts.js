@@ -20,7 +20,7 @@ containerButton.addEventListener("click", (event) => {
                 <li class="name">Name: ${datas.name} ${datas.lastName}</li>
                 <li><strong>Date of birth:</strong> ${datas.birth}</li>
                 <li><strong>Age:</strong> ${datas.age}</li>
-                <li><strong>Phone Number:</strong> ${'+(' + datas.prefix}) ${datas.number}</li>
+                <li><strong>Phone Number:</strong> ${'(+' + datas.prefix}) ${datas.number}</li>
                 <li><strong>City:</strong> ${datas.city}</li>
                 <li><strong>Country:</strong> ${datas.country}</li>
                 <li class="link__color"><i class="fa-solid fa-envelope"></i><a class="email" href="mailto:${datas.email}" target='_blank'>Email</a></li>
