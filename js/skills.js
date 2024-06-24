@@ -3,16 +3,20 @@ const courses = [
       course: "Front-end developer",
       companyName: "Alura Course",
       country: "BR",
-      startDate: "2022-01-05",
+      startDate: "2022-05-01",
       endDate: "Currently",
       site: "https://www.alura.com.br",
+      nameSite: "Alura Website",
       skills: [
-        "Recruitment and selection",
-        "Personal Department",
-        "Quality",
-        "Math",
-        "Psychology",
-        "Occupational hygiene and safety"
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Programming logic",
+        "Git",
+        "GitHub",
+        "Bootstrap",
+        "React",
+        "Node.js"
       ]
     },
     {
@@ -22,16 +26,15 @@ const courses = [
         startDate: "2011-01-02",
         endDate: "2011-12-20",
         site: "https://fasam.edu.br/",
+        nameSite: "FASAM Website",
         skills: [
-          "HTML",
-          "CSS",
-          "Javascript",
-          "Programming logic",
-          "Git",
-          "GitHub",
-          "Bootstrap",
-          "React",
-          "Node.js"
+
+          "Recruitment and selection",
+          "Personal Department",
+          "Quality",
+          "Math",
+          "Psychology",
+          "Occupational hygiene and safety"
         ]
       }
 ]
@@ -42,10 +45,8 @@ const skills = document.querySelector('.skills__title');
 
 courses.forEach((course) => {
     skills.innerHTML += `
-                    <div class="studies">
                     <h2>${course.course} - ${course.companyName} - ${course.country}</h2>
-                    <a
-                    href="${course.site}" class="link__color alura__course"></a>
+                    <a href="${course.site}" target="_blank" class="link__color alura__course">${course.nameSite}</a>
 
                     <p class="period">Date: ${course.startDate} to ${course.endDate}</p>
                     <ul>
