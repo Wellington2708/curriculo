@@ -73,7 +73,7 @@ let container = document.querySelector('.experience');
 
 employeeData.forEach((position) => {
     container.innerHTML += `
-                    <div>
+                    <div class="experience__function">
                     <h2>${position.position} - ${position.companyName} - ${position.city} - ${position.country}</h2>
                     <p class="period">Date: ${position.startDate} to ${position.endDate}</p>
                     <ul>
